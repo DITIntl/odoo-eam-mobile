@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingTop="?android:attr/actionBarSize"
+   >
+
+
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+      android:padding="15dp">
+
+   
+    
+    
+    
+
+  <TextView
+            android:id="@+id/assetdetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sale_price_result"
+            android:layout_marginTop="16dp"
+            android:background="#cccccc"
+            android:gravity="center_horizontal"
+            android:text="Asset Detail"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+ 
+
+   <!-- <ImageView
+         android:id="@+id/uploadImage"
+          android:layout_width="287dp"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+         android:src="@drawable/cameraimage" />
+  
+    -->
+    <ImageView
+            android:id="@+id/uploadImage"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            
+             android:background="@drawable/rounded_corner"
+            android:src="@drawable/cameraimage" />
+   
+  
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/asset_name"
+            android:layout_width="match_parent"
+           android:layout_height="35dp"
+            android:layout_weight=".6"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="Asset Name" />
+
+         
+        
+        <TextView
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center_vertical"
+            android:layout_weight=".4"
+            android:text="-"
+            />
+
+    </LinearLayout>
+    
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="match_parent"
+       android:layout_height="35dp"
+         android:gravity="center_vertical"
+         android:layout_weight="0.6"
+           android:textStyle="bold"
+          android:paddingLeft="5dp"
+         android:text="Location" />
+
+    <TextView
+        android:id="@+id/spinner_location"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:text="-"
+         android:gravity="center_vertical"
+      android:layout_height="match_parent" />
+    </LinearLayout>
+    
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="match_parent"
+       android:layout_height="35dp"
+         android:gravity="center_vertical"
+         android:layout_weight="0.6"
+           android:textStyle="bold"
+          android:paddingLeft="5dp"
+         android:text="Category" />
+
+    <TextView
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:text="-"
+         android:gravity="center_vertical"
+      android:layout_height="match_parent" />
+    </LinearLayout>
+    
+     
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+     <TextView
+         android:id="@+id/textView4"
+         android:layout_width="match_parent"
+       android:layout_height="35dp"
+         android:gravity="center_vertical"
+         android:layout_weight="0.6"
+           android:textStyle="bold"
+          android:paddingLeft="5dp"
+         android:text="Equipment Family" />
+
+    <TextView
+        android:id="@+id/spinner_equip"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:text="-"
+         android:gravity="center_vertical"
+      android:layout_height="match_parent" />
+    </LinearLayout> 
+    
+     
+        
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+     <TextView
+         android:id="@+id/textView5"
+         android:layout_width="match_parent"
+       android:layout_height="35dp"
+         android:gravity="center_vertical"
+         android:layout_weight="0.6"
+           android:textStyle="bold"
+          android:paddingLeft="5dp"
+         android:text="Origin Of Equipment" />
+
+    <TextView
+        android:id="@+id/spinner_originequipment"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:text="-"
+         android:gravity="center_vertical"
+      android:layout_height="match_parent" />
+    </LinearLayout> 
+    
+     <TextView
+            android:id="@+id/Information"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sale_price_result"
+            android:layout_marginTop="16dp"
+            android:background="#cccccc"
+            android:gravity="center_horizontal"
+            android:text="INFORMATION"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+          
+          
+          
+ 
+
+ 
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/Mark"
+            android:layout_width="match_parent"
+           android:layout_height="35dp"
+            android:layout_weight=".6"
+            android:gravity="center_vertical"
+              android:textStyle="bold"
+             android:paddingLeft="5dp"
+            android:text="Mark" />
+
+        <TextView
+            android:id="@+id/edit_mark"
+            android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight=".4"
+            android:text="-"
+            />
+
+    </LinearLayout>
+ 
+ 
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+          android:layout_height="35dp"
+            android:layout_weight=".6"
+             android:paddingLeft="5dp"
+             android:gravity="center_vertical"
+               android:textStyle="bold"
+            android:text="Model" />
+
+        <TextView
+            android:id="@+id/edit_model"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+           android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:text="-"
+           />
+
+    </LinearLayout>
+ 
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/serialno"
+            android:layout_width="match_parent"
+           android:layout_height="35dp"
+            android:layout_weight=".6"
+            android:gravity="center_vertical"
+             android:paddingLeft="5dp"
+               android:textStyle="bold"
+            android:text="Serial No" />
+
+        <TextView
+            android:id="@+id/edit_serialno"
+            android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center_vertical"
+            android:layout_weight=".4"
+            android:text="-"
+             />
+
+    </LinearLayout>
+    
+  
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+           android:layout_height="35dp"
+            android:layout_weight=".6"
+            android:gravity="center_vertical"
+             android:paddingLeft="5dp"
+               android:textStyle="bold"
+            android:text="Code" />
+
+        <TextView
+            android:id="@+id/edit_code"
+            android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center_vertical"
+            android:layout_weight=".4"
+            android:text="-"
+             />
+
+    </LinearLayout>
+  
+     <TextView
+            android:id="@+id/barcode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sale_price_result"
+            android:layout_marginTop="16dp"
+            android:background="#cccccc"
+            android:gravity="center_horizontal"
+            android:text="BARCODE"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   
+   
+   
+   
+   
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/barcodeno"
+            android:layout_width="match_parent"
+           android:layout_height="35dp"
+            android:layout_weight=".6"
+            android:gravity="center_vertical"
+              android:textStyle="bold"
+             android:paddingLeft="5dp"
+            android:text="Barcode No" />
+
+        <TextView
+            android:id="@+id/edit_barcodeno"
+            android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:gravity="center_vertical"
+            android:text="-"
+             />
+
+    </LinearLayout>
+    
+    
+     
+     
+     
+     
+     
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/barcodelabel"
+            android:layout_width="match_parent"
+           android:layout_height="35dp"
+            android:layout_weight=".6"
+            android:gravity="center_vertical"
+              android:textStyle="bold"
+             android:paddingLeft="5dp"
+            android:text="Barcode Label" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="150dp"
+             
+           />
+
+    </LinearLayout>
+    
+ </LinearLayout>
+ 
+</ScrollView>
+ 

@@ -1,0 +1,244 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingTop="?android:attr/actionBarSize"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+     <!-- Text Label for Aseets details  -->   
+        
+         <TextView
+            android:id="@+id/assetdetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sale_price_result"
+          
+            android:background="#cccccc"
+            android:gravity="center_horizontal"
+            android:text="Edit Asset Detail"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+        
+     <!--    <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cameraimage" />
+         -->
+        
+        
+        <!--Imageview for display the iamge of asset  -->
+        
+        <ImageView
+            android:id="@+id/uploadImage"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+              android:scaleType="fitXY"
+              android:background="@drawable/rounded_corner"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cameraimage" />
+
+        <LinearLayout
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right" >
+
+  
+ <!-- Button for Edit The Image Or it will display the option for change the image -->
+            
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:layout_weight="0.48"
+                android:background="@drawable/edit_img" />
+        </LinearLayout>
+        
+ 
+        
+ <!-- Details for edit all the fields of asset information like name,mark,model....etc  -->  
+      
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asset Name:" />
+
+        <EditText
+            android:id="@+id/editText_assetname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spinner_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/spinner_equipment_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/spinner_origin_equipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/Information"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sale_price_result"
+            android:layout_marginTop="16dp"
+            android:background="#cccccc"
+            android:gravity="center_horizontal"
+            android:text="INFORMATION"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Mark :" />
+
+        <EditText
+            android:id="@+id/editText_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model:" />
+
+        <EditText
+            android:id="@+id/editText_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serial No:" />
+
+        <EditText
+            android:id="@+id/editText_serialno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/barcode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sale_price_result"
+            android:layout_marginTop="16dp"
+            android:background="#cccccc"
+            android:gravity="center_horizontal"
+            android:text="BARCODE"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="BarCode No:" />
+
+        <EditText
+            android:id="@+id/editText_barcodeno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BarCode Label:" />
+
+        <ImageView
+            android:id="@+id/barcodeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/menu_edit_button"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner_color"
+                android:text="Update"
+                android:textColor="@android:color/white"
+             android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Cancleofedit"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner_color"
+                android:text="Cancle"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
