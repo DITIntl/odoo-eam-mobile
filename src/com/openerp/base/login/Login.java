@@ -57,6 +57,8 @@ import com.openerp.support.OEUser;
 import com.openerp.support.fragment.FragmentListener;
 import com.openerp.util.drawer.DrawerItem;
 
+import static android.app.PendingIntent.getActivity;
+
 /**
  * The Class Login.
  */
